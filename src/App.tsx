@@ -697,6 +697,48 @@ export default function App() {
         </AnimatePresence>
       </main>
 
+      {/* Global Footer */}
+      <footer className="border-t border-white/5 bg-black/60 backdrop-blur-md py-8 px-4 mt-auto pb-24 md:pb-8">
+        <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col gap-1.5 text-center md:text-left">
+            <span className="font-mono text-sm font-black tracking-widest text-white uppercase">
+              LEER <span className="text-brand">SPORTS</span>
+            </span>
+            <p className="text-[11px] text-gray-500 max-w-sm">
+              Premium fitness creator & coaching platform. All rights reserved.
+            </p>
+          </div>
+          
+          {/* Developer Profile & Customization Services */}
+          <div className="flex flex-col gap-2 p-4 bg-white/[0.02] border border-white/5 rounded-2xl max-w-md w-full text-left font-mono">
+            <h4 className="text-xs font-bold text-white tracking-wide border-b border-white/5 pb-1.5 flex items-center justify-between">
+              <span>Developer Profile & Customization Services</span>
+              <span className="text-[9px] text-brand bg-brand/10 px-1.5 py-0.5 rounded">Lead Developer</span>
+            </h4>
+            <div className="space-y-1 text-[11px] text-gray-400 mt-1">
+              <div>
+                <span className="text-gray-500">Lead Developer:</span> <span className="text-white font-semibold">MD Arifur Rahman</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-gray-500">💬 WhatsApp:</span> 
+                <a href="https://wa.me/8801756601431" target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">
+                  +880 1756-601431
+                </a>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-gray-500">✉️ Email:</span> 
+                <a href="mailto:arifur.fullstack@gmail.com" className="text-brand hover:underline">
+                  arifur.fullstack@gmail.com
+                </a>
+              </div>
+              <div className="text-[10px] text-gray-500 bg-white/5 rounded p-1.5 mt-2 border border-white/5 leading-relaxed">
+                🛠️ <span className="text-gray-300 font-bold">Notice:</span> For any additional custom integrations or platform tailoring, feel free to send a DM!
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
       {/* Dynamic Authorization Dialog Modal */}
       <AuthModal
         isOpen={isAuthOpen}

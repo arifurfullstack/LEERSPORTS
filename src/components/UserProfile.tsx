@@ -486,6 +486,35 @@ export default function UserProfile({
             </div>
           </div>
 
+          {/* DEVELOPER PROFILE & CUSTOMIZATION SERVICES CARD */}
+          <div className="p-6 rounded-2xl bg-luxury-gray border border-white/5 space-y-4 font-mono">
+            <h3 className="text-xs uppercase tracking-wider text-gray-400 flex items-center justify-between border-b border-white/5 pb-2">
+              <span>Developer Profile</span>
+              <span className="text-[8px] bg-brand/10 text-brand px-1.5 py-0.5 rounded font-black">SERVICES</span>
+            </h3>
+            
+            <div className="space-y-2 text-[11px] text-gray-300">
+              <div>
+                <span className="text-gray-500">Lead Developer:</span> <span className="text-white font-bold">MD Arifur Rahman</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-gray-500">💬 WhatsApp:</span>
+                <a href="https://wa.me/8801756601431" target="_blank" rel="noopener noreferrer" className="text-brand hover:underline">
+                  +880 1756-601431
+                </a>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-gray-500">✉️ Email:</span>
+                <a href="mailto:arifur.fullstack@gmail.com" className="text-brand hover:underline">
+                  arifur.fullstack@gmail.com
+                </a>
+              </div>
+              <div className="text-[10px] text-gray-500 bg-black/40 rounded-xl p-3 border border-white/5 leading-relaxed mt-2">
+                🛠️ <span className="text-gray-300 font-bold">Notice:</span> For any additional custom integrations or platform tailoring, feel free to send a DM!
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
