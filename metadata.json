@@ -1,0 +1,11 @@
+{
+  "name": "LEER Sports",
+  "description": "LEER Sports is a premium fitness creator platform where verified trainers monetize their expertise through subscriptions, premium content, and personalized coaching.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

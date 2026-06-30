@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand: #ff0033; /* Neon Red */
+  --color-brand-hover: #e6002e;
+  --color-luxury-black: #020202;
+  --color-luxury-gray: #0b0b0f;
+  --color-glass: rgba(15, 15, 20, 0.7);
+  --color-border-glass: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  body {
+    background-color: #020202;
+    color: #f3f4f6;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Webkit Scrollbars for premium Gym aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020202;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f29;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0033;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(10, 10, 12, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-panel-heavy {
+  background: rgba(8, 8, 10, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glow effect */
+.glow-text-red {
+  text-shadow: 0 0 10px rgba(255, 0, 51, 0.5), 0 0 20px rgba(255, 0, 51, 0.2);
+}
+
+.glow-box-red {
+  box-shadow: 0 0 15px rgba(255, 0, 51, 0.25);
+}
+
+.glow-border-red:focus {
+  border-color: #ff0033;
+  box-shadow: 0 0 8px rgba(255, 0, 51, 0.4);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.03) 25%, rgba(255, 255, 255, 0.09) 50%, rgba(255, 255, 255, 0.03) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+
